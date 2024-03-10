@@ -2271,7 +2271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4824270433119796, guid: 25325a4f845eebc47b1a00b01a949eda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.24
+      value: -11.17
       objectReference: {fileID: 0}
     - target: {fileID: 4824270433119796, guid: 25325a4f845eebc47b1a00b01a949eda, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2309,8 +2309,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4824270433119796, guid: 25325a4f845eebc47b1a00b01a949eda,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1304447880}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1378692596590864, guid: 25325a4f845eebc47b1a00b01a949eda,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 498993071}
   m_SourcePrefab: {fileID: 100100000, guid: 25325a4f845eebc47b1a00b01a949eda, type: 3}
 --- !u!1 &498993061 stripped
 GameObject:
@@ -2318,6 +2326,29 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 498993060}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &498993070 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4824270433119796, guid: 25325a4f845eebc47b1a00b01a949eda,
+    type: 3}
+  m_PrefabInstance: {fileID: 498993060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &498993071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498993061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b98fa15a09a1c44ae3964843989277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: {fileID: 1304447880}
+  radius: 1.63
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1001 &512002436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3763,7 +3794,8 @@ GameObject:
   - component: {fileID: 863612406}
   - component: {fileID: 863612405}
   - component: {fileID: 863612407}
-  m_Layer: 0
+  - component: {fileID: 863612408}
+  m_Layer: 9
   m_Name: EnenmyHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3876,6 +3908,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &863612408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863612402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a18c7c11bac96842aab9964ed4bc2dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &869520950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5712,6 +5756,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1301142109}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1304447879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1304447880}
+  m_Layer: 0
+  m_Name: point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1304447880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304447879}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 498993070}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1313044840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7807,7 +7882,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1754031892}
   - component: {fileID: 1754031893}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: joana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
