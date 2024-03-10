@@ -4,15 +4,53 @@ using UnityEngine;
 
 public class TeslaShockim : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public Transform point;
+    public float radius;
+
+
+
+    public LayerMask enemyLayer;
+    
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        ShockWave();
     }
+
+
+    #region Shokim
+
+    void ShockWave()
+    {
+          Collider2D hit = Physics2D.OverlapCircle(point.position, radius,enemyLayer);
+        if(hit!= null)
+        {
+            hit.GetComponent<TakeDamage>().Destroying();
+            }
+
+         
+
+
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(point.position,radius);
+    }
+
+
+
+
 }
+
+
+
+
+    #endregion
+        

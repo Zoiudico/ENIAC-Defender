@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class TakeDamage : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void Update() 
     {
         
+    }
+
+
+    public void Destroying()
+    {
+        Object.Destroy(gameObject,1f);
+
+
     }
 }
