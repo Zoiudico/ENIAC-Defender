@@ -7,6 +7,7 @@ public class TeslaShockim : MonoBehaviour
 
     public Transform point;
     public float radius;
+    public int score;
 
 
 
@@ -31,6 +32,9 @@ public class TeslaShockim : MonoBehaviour
           Collider2D hit = Physics2D.OverlapCircle(point.position, radius,enemyLayer);
         if(hit!= null)
         {
+
+
+        
             hit.GetComponent<TakeDamage>().Destroying();
             }
 
