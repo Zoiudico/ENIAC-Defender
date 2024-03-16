@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+<<<<<<< Updated upstream
 
     public GameObject Insect;
     public float timeSpawn;
@@ -12,12 +13,27 @@ public class GameController : MonoBehaviour
     void Start()
     {
        InvokeRepeating("startSpawn", timeSpawn, timeSpawn);
+=======
+    public int totalScore;
+
+
+    public static GameController instance;
+
+
+
+
+
+    void Start()
+    {
+        instance = this;
+>>>>>>> Stashed changes
     }
 
     void Update()
     {
         
     }
+<<<<<<< Updated upstream
 
     void startSpawn()
     {
@@ -26,4 +42,6 @@ public class GameController : MonoBehaviour
        Instantiate(Insect,spawnPoint[spawnPointIndex].position, spawnPoint[spawnPointIndex].rotation);
 
     }
+=======
+>>>>>>> Stashed changes
 }
