@@ -1,20 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-<<<<<<< Updated upstream
+
 
     public GameObject Insect;
     public float timeSpawn;
     public Transform[] spawnPoint;
 
-    void Start()
-    {
-       InvokeRepeating("startSpawn", timeSpawn, timeSpawn);
-=======
+     
     public int totalScore;
+    public Text scoreText;
 
 
     public static GameController instance;
@@ -25,15 +24,16 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        instance = this;
->>>>>>> Stashed changes
+          instance = this;
+  
+          InvokeRepeating("startSpawn", timeSpawn, timeSpawn);
+
     }
 
     void Update()
     {
         
     }
-<<<<<<< Updated upstream
 
     void startSpawn()
     {
@@ -42,6 +42,12 @@ public class GameController : MonoBehaviour
        Instantiate(Insect,spawnPoint[spawnPointIndex].position, spawnPoint[spawnPointIndex].rotation);
 
     }
-=======
->>>>>>> Stashed changes
+
+
+
+    public void UpdateScoreText()
+    {
+     scoreText.text = totalScore.ToString();
+    }
+
 }

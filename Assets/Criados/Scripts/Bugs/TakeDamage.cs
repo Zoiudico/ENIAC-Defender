@@ -23,6 +23,8 @@ public class TakeDamage : MonoBehaviour
  
         GameController.instance.totalScore += 10;
 
+        GameController.instance.UpdateScoreText();
+
 
     }
 }
