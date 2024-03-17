@@ -29,14 +29,12 @@ public class TeslaShockim : MonoBehaviour
 
     void ShockWave()
     {
-          Collider2D hit = Physics2D.OverlapCircle(point.position, radius,enemyLayer);
+        Collider2D hit = Physics2D.OverlapCircle(point.position, radius,enemyLayer);
+
         if(hit!= null)
-        {
-
-
-        
+        {       
             hit.GetComponent<TakeDamage>().Destroying();
-            }
+        }
 
          
 
