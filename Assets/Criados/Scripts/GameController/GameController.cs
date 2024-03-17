@@ -4,36 +4,27 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-<<<<<<< Updated upstream
 
     public GameObject Insect;
     public float timeSpawn;
     public Transform[] spawnPoint;
 
-    void Start()
-    {
-       InvokeRepeating("startSpawn", timeSpawn, timeSpawn);
-=======
     public int totalScore;
-
-
     public static GameController instance;
 
-
-
-
-
     void Start()
     {
+        InvokeRepeating("startSpawn", timeSpawn, timeSpawn);
+
         instance = this;
->>>>>>> Stashed changes
+    
     }
+
 
     void Update()
     {
         
     }
-<<<<<<< Updated upstream
 
     void startSpawn()
     {
@@ -42,6 +33,5 @@ public class GameController : MonoBehaviour
        Instantiate(Insect,spawnPoint[spawnPointIndex].position, spawnPoint[spawnPointIndex].rotation);
 
     }
-=======
->>>>>>> Stashed changes
+
 }
