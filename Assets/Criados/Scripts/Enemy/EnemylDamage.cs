@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyDamage : MonoBehaviour
 {
     public int damage;
-    public HealthBar healthBar;
+    public HealthManager healthBar;
      
 
 
