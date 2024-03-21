@@ -1998,6 +1998,7 @@ MonoBehaviour:
   timeSpawn: 1
   spawnPoint:
   - {fileID: 376185269}
+  timerLimit: 0
   totalScore: 0
 --- !u!4 &1098445778
 Transform:
@@ -3524,7 +3525,7 @@ PrefabInstance:
     - target: {fileID: 5832886233018428022, guid: bab47e40ea736484bb84478472a4c8f0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.2
+      value: 3.95
       objectReference: {fileID: 0}
     - target: {fileID: 5832886233018428022, guid: bab47e40ea736484bb84478472a4c8f0,
         type: 3}
@@ -3565,6 +3566,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731973340381586869, guid: bab47e40ea736484bb84478472a4c8f0,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.2157946
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731973340381586869, guid: bab47e40ea736484bb84478472a4c8f0,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 2.1994765
       objectReference: {fileID: 0}
     - target: {fileID: 9087032601968158586, guid: bab47e40ea736484bb84478472a4c8f0,
         type: 3}
