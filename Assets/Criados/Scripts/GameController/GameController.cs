@@ -9,6 +9,9 @@ public class GameController : MonoBehaviour
     public float timeSpawn;
     public Transform[] spawnPoint;
 
+    private float timer;
+    public float timerLimit;
+
     public int totalScore;
     public static GameController instance;
 
@@ -23,7 +26,14 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        
+        timer = Time.deltaTime;
+
+        if (timer >= timerLimit)
+        {
+            int spawnPointIndex = Random.Range(0, spawnPoint.Length);
+
+            timer = 0;
+        }
     }
 
     void startSpawn()
