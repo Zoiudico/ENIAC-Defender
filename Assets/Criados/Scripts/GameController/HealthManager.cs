@@ -20,7 +20,7 @@ public class HealthManager : MonoBehaviour
     {
         if (healthAmount <= 0)
         {
-            SceneManager.LoadScene("level1"); 
+            SceneManager.LoadScene("Perdeu"); 
         }
     }
 
